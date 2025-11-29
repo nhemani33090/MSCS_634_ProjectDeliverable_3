@@ -138,15 +138,16 @@ Evaluated using **Accuracy**, **F1-score**, **Confusion Matrix**, and **ROC Curv
 
 The model performed similarly well across both classes.
 
-### **Hyperparameter Tuning**
-GridSearchCV was applied to tune:
+### Hyperparameter Tuning for Decision Tree
 
-- `max_depth`
-- `min_samples_split`
+To improve the classification performance, I applied **GridSearchCV** using 5-fold cross-validation and F1-score as the evaluation metric.  
+The parameters tuned were **max_depth** (tree depth) and **min_samples_split** (minimum samples required to split a node).  
+GridSearchCV tested all combinations and selected the best-performing hyperparameters:
 
-**Best parameters found:**
 - `max_depth = 10`
 - `min_samples_split = 10`
+
+This configuration produced the highest cross-validated F1-score and improved accuracy compared to the baseline Decision Tree.
 
 **Tuned Decision Tree Performance:**
 - **Accuracy:** 0.9185  
