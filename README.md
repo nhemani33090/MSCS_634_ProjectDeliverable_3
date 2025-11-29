@@ -22,7 +22,7 @@ Vivek. (2019). *Superstore Sales Dataset*. Kaggle.
 
 # 🧩 Deliverable 1 — Data Collection, Cleaning, and Exploration
 
-### ✔️ Cleaning Steps Performed
+### Cleaning Steps Performed
 - Loaded the dataset and inspected structure (`.info()`, `.describe()`).
 - Summarized missing values **before and after cleaning**.
 - Removed duplicates (0 found).
@@ -32,14 +32,14 @@ Vivek. (2019). *Superstore Sales Dataset*. Kaggle.
 - **Outlier Detection**: Identified extreme values using the IQR method.
 - **Outlier Clipping**: Capped `Sales`, `Profit`, `Discount`, and `Quantity` to reduce noise.
 
-### ✔️ Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 Visualizations included:
 - Histograms  
 - Boxplots  
 - Correlation heatmap  
 - Profit grouped by Category, Sub‑Category, Region, and Segment  
 
-### ✔️ Insights
+### Insights
 - Higher discounts sharply reduce profit.
 - Technology products generate the highest margins.
 - Tables & Bookcases are consistently low-profit categories.
@@ -52,10 +52,10 @@ The cleaned dataset was saved as:
 
 # 📈 Deliverable 2 — Regression Modeling & Performance Evaluation
 
-## ✔️ Objective
+## Objective
 Predict **Profit** using regression models and compare model performance.
 
-## ✔️ Models Implemented
+## Models Implemented
 - **Linear Regression**
 - **Ridge Regression** (L2 regularization)
 - **Lasso Regression** (L1 regularization)
@@ -65,14 +65,14 @@ All models used:
 - Standardization for numeric features  
 - Pipelines to ensure consistent preprocessing  
 
-## ✔️ Evaluation Metrics
+## Evaluation Metrics
 - R²  
 - MAE  
 - MSE  
 - RMSE  
 - **5‑fold cross‑validation**
 
-## ✔️ Actual Results
+## Actual Results
 
 | Model | Test R² | Test MAE | Test RMSE | CV R² Mean |
 |------|---------|-----------|-----------|------------|
@@ -80,14 +80,14 @@ All models used:
 | Ridge (α=1.0) | 0.5733 | 14.102 | 18.936 | 0.5701 |
 | Lasso (α=0.001) | 0.5733 | 14.103 | 18.937 | 0.5701 |
 
-### ✔️ Interpretation
+### Interpretation
 - All models performed **almost identically**.
 - Regularization does NOT dramatically improve performance, meaning:
   - Data is stable  
   - No major multicollinearity  
   - One‑hot encoding helps stabilize the model  
 
-### ✔️ Most Important Features (Coefficient Analysis)
+### Most Important Features (Coefficient Analysis)
 **Strong positive predictors:**  
 - Copiers  
 - Sales  
